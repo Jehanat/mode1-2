@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="SearchPrint">
+Select Search Criteria:
+<input type="radio" name="searchType" value="id">By Book Id<br/>
+
+
+
+
+</form>
+</body>
+</html>

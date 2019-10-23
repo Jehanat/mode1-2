@@ -1,0 +1,5 @@
+package com.hcl.threads;
+
+public class SyncEx {
+
+}

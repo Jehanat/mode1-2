@@ -1,0 +1,5 @@
+package com.hcl.ex;
+
+public class NegativeException {
+
+}

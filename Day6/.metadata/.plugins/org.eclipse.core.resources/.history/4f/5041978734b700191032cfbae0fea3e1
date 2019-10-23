@@ -1,0 +1,22 @@
+package com.hcl.collections;
+
+ class Data {
+
+	public void swap(int x,int y) {
+		int t;
+		t=x;
+		x=y;
+		y=t;
+		System.out.println("x value "  +x+  "Y value "  +y);
+	}
+	
+}
+ public class SwapDemo{
+	 public static void main(String[] args) {
+		Data obj=new Data();
+		int x,y;
+		x=12;
+		y=13;
+		obj.swap(x, y);
+	}
+ }

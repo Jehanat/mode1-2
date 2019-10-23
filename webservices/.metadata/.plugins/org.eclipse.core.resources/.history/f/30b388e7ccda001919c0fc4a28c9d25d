@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from HelloWorldService WSDL service -->
+
+  <service name="HelloWorld" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://jehanat.com"/>
+      <parameter name="wsdlServiceElement" value="HelloWorldService"/>
+      <parameter name="schemaQualified" value="http://jehanat.com"/>
+      <parameter name="wsdlServicePort" value="HelloWorld"/>
+      <parameter name="className" value="com.jehanat.HelloWorld"/>
+      <parameter name="wsdlPortType" value="HelloWorld"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://jehanat.com" xmlns:retNS="http://jehanat.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="sayHelloWorld" qname="operNS:sayHelloWorld" returnQName="retNS:sayHelloWorldReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://jehanat.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:message" type="tns:string"/>
+        <fault xmlns:fns="http://jehanat.com" xmlns:tns="http://jehanat.com" name="MissingName" qname="fns:fault" class="com.jehanat.MissingName" type="tns:MissingName"/>
+      </operation>
+      <parameter name="allowedMethods" value="sayHelloWorld"/>
+
+      <typeMapping xmlns:ns="http://jehanat.com" qname="ns:MissingName" type="java:com.jehanat.MissingName" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>

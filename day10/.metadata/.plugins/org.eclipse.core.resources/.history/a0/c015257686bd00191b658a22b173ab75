@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+<input type="button " value="Jenny"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button " value="Shrey"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button " value="Sharry"/>
+
+</center></body>
+</html>

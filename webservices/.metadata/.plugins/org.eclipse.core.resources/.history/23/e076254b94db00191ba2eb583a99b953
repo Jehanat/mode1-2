@@ -1,0 +1,5 @@
+package com.journaldev.jars.dao;
+
+public interface EmployeeDao {
+
+}

@@ -1,0 +1,15 @@
+package hcl.com.junitpractice;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DataTest {
+
+	@Test
+	public void testSayHello(){
+		Data objData=new Data();
+		assertEquals("Welcome to JUnit",objData.sayHello());
+	}
+
+}

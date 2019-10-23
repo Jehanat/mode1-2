@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form name="frmLogin">
+<center>
+<table border="3">
+<tr>
+<th colspan="2">
+Login
+</th>
+<tr><th>User Name</th>
+<td>
+<input type="text"
+name="UserName"/>
+</td>
+</tr>
+<tr><th>Password</th>
+<td>
+<input type="password"
+name="passWord"/>
+</td>
+</tr>
+
+</table>
+
+</form>
+</center>
+</body>
+</html>

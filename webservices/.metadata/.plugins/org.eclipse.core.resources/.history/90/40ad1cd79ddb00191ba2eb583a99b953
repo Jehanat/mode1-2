@@ -1,0 +1,33 @@
+package com.journaldev.jars.dao;
+
+import javax.ws.rs.core.Response;
+
+import com.journaldev.jaxrs.model.Employee;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	@Override
+	public Response addEmployee(Employee e) {
+		
+		return null;
+	}
+
+	@Override
+	public Response deleteEmployee(int id) {
+		
+		return null;
+	}
+
+	@Override
+	public Employee getEmployee(int id) {
+		
+		return null;
+	}
+
+	@Override
+	public Employee[] getAllEmployees() {
+		
+		return null;
+	}
+
+}

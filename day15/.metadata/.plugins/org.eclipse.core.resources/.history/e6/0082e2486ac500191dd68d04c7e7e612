@@ -1,0 +1,10 @@
+package com.hcl.library;
+
+import java.sql.Connection;
+
+public class LibraryLogin {
+public static boolean authenticate (String user,String pwd){
+	Connection con=DaoConnection.getConnection();
+	String cmd="select * from LibUsers where user=?"
+}
+}

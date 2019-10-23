@@ -1,0 +1,5 @@
+package com.hcl.student.controller;
+
+public class StudentController {
+
+}

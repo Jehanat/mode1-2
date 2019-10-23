@@ -1,0 +1,13 @@
+package com.jehanat;
+
+public class Jehanat {
+	
+		public String getName(String name,String SapCode,String emailId)
+		{
+			return getName("Jehanat","51823116","jehanatjamil.hcl.com");
+		}
+		
+
+	}
+
+

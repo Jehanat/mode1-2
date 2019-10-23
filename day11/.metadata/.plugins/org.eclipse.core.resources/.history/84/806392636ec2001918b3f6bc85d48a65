@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href='AddStockId'>Add Stock Id servlet</a>
+<a href='SearchStock'>SearchStockServlet</a>
+<a href='PlaceStockId'>PlaceStockIdServlet</a>
+
+</body>
+</html>

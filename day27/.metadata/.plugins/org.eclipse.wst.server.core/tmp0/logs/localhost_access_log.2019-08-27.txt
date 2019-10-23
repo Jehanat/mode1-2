@@ -1,0 +1,5 @@
+127.0.0.1 - - [27/Aug/2019:11:48:54 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Aug/2019:11:48:55 +0530] "GET /LeaveManagementProject/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [27/Aug/2019:11:49:26 +0530] "POST /LeaveManagementProject/LoginServlet HTTP/1.1" 500 3581
+0:0:0:0:0:0:0:1 - - [27/Aug/2019:11:49:37 +0530] "POST /LeaveManagementProject/LoginServlet HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [27/Aug/2019:11:51:19 +0530] "GET /LeaveManagementProject/menu.html HTTP/1.1" 200 436

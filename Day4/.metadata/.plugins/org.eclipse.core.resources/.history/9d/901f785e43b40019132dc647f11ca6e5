@@ -1,0 +1,8 @@
+package com.hcl.ex;
+
+import java.io.File;
+
+public class FileReader {
+	public static void main(String[] args) {
+		File f1= new File("C:/hcljava/Day4/Practice4/src/com/hcl/ex/Custom.java");
+      FileReader fr=new  FileReader(f1)}}

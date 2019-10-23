@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\Coalesce\Downloads\SpringMVCHibernateCRUD"/>
+			<item value="C:\Users\Coalesce\Downloads\spel-master"/>
+			<item value="C:\Users\Coalesce\Downloads\SpringMVCHibernateWithSpringSecurityExample"/>
+			<item value="C:\Users\Coalesce\Downloads\SpringWebwithSpringSecurity"/>
+			<item value="C:\Users\Coalesce\Downloads\SpringMVCHibernateCRUD\SpringMVCHibernateCRUD"/>
+			<item value="C:\hcljava\hibernate\SpringMVCHibernateCRUD"/>
+			<item value="C:\hcljava\hibernate\StudentSpringHib"/>
+			<item value="C:\hcljava\hibernate\SpringMVCStudentCRUD"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="hcl"/>
+			<item value="Java8Str"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="JavaStream8"/>
+			<item value="Java8Str"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\hcljava\hib\Java8Streams"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.hcl.abc"/>
+			<item value="hcl.XYx"/>
+			<item value="hcl"/>
+			<item value="hcl.xyz"/>
+			<item value="com.hcl.streams"/>
+			<item value="com.hcl.java8"/>
+			<item value="jenny.java8streams"/>
+			<item value="jenny.ja"/>
+			<item value="hcl.Java8StreamDemo"/>
+			<item value="com.jenny.java8streams"/>
+			<item value="com.java8streams"/>
+			<item value="Java8StreamsNew.jenny.java8"/>
+			<item value="Java8Streams"/>
+			<item value="jenny.java8streams.model"/>
+		</list>
+		<list key="groupId">
+			<item value="hcl"/>
+			<item value="Java8Streams2"/>
+			<item value="Java8Streams1"/>
+			<item value="Java8StreamsNew"/>
+			<item value="Java8Streams"/>
+		</list>
+		<list key="artifactId">
+			<item value="ABC"/>
+			<item value="XYx"/>
+			<item value="xyz"/>
+			<item value="Java8StreamsNew1"/>
+			<item value="Java8"/>
+			<item value="DemoJava8"/>
+			<item value="Java8StreamDemo"/>
+			<item value="Java8Streams2"/>
+			<item value="Java8Streams1"/>
+			<item value="Java8StreamsNew"/>
+			<item value="jenny.java8"/>
+			<item value="EmployeeStream"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

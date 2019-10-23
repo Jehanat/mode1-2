@@ -1,0 +1,31 @@
+package com.jenny;
+
+import java.rmi.RemoteException;
+
+import com.bindu.BinduProxy;
+import com.jaanu.JananiDemoProxy;
+
+public class MainApplication {
+
+public static void main(String[] args) {
+	int result=0;
+	
+	BinduProxy calculatorProxy1= new BinduProxy();
+	JananiDemoProxy calculatorProxy2= new JananiDemoProxy();
+	try {
+		result=calculatorProxy1.getInt();
+		System.out.println(" SapCode of Bindu:" +result);
+		result=calculatorProxy2.getInt();
+		System.out.println(" SapCode of Bindu:" +result);
+
+		
+
+	} catch (RemoteException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+}
+
+

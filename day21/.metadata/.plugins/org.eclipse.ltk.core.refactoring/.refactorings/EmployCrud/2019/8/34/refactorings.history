@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DaoConnection.java&apos; to &apos;DepartmentCrud/src&apos;&#x0D;&#x0A;- Original project: &apos;EmployCrud&apos;&#x0D;&#x0A;- Destination element: &apos;DepartmentCrud/src&apos;&#x0D;&#x0A;- Original element: &apos;com.hcl.jsp.DaoConnection.java&apos;" description="Copy compilation unit" destination="=DepartmentCrud/src" element1="/src&lt;com.hcl.jsp{DaoConnection.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1566456901737" units="1" version="1.0"/>
+</session>

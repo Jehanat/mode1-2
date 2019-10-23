@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+<xs:element name="employeedata">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="employee">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="empNo" >
+<xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="empName" type="xs:string" />
+ 
+<xs:element name="salary" type="xs:integer" />
+<xs:element name="band" >
+<xs:simpleType>
+    <xs:restriction base="xs:string">
+    <xs:length value="1"/>
+      <xs:enumeration value="C"/>
+      <xs:enumeration value="E"/>
+      <xs:enumeration value="M"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="dateOfJoin">
+
+<xs:simpleType>
+        <xs:restriction base="xs:date">
+            <xs:pattern
+            value="(19|20)((([02468][48]|[13579][26])-0?2-29)|\d\d-((0?[469]|11)-([012]?\d|30)|(0?[13578]|1[02])-([012]?\d|3[01])|(0?2-([01]?\d|2[0-8]))))">
+            </xs:pattern>
+        </xs:restriction>
+</xs:simpleType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

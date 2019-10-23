@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+
+function show(){
+	var arr=[3,'hello', function(){
+		return "Welcome";
+	},
+	'city':'Hyderabad',
+	'state':'TS'
+];
+	var res="";
+}

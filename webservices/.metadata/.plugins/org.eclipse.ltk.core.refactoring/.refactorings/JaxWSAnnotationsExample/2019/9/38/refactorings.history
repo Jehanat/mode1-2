@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WSPublisher.java&apos; to &apos;SOAPwithAnnotation/src/helloservice.endpoint&apos;&#x0D;&#x0A;- Original project: &apos;JaxWSAnnotationsExample&apos;&#x0D;&#x0A;- Destination element: &apos;SOAPwithAnnotation/src/helloservice.endpoint&apos;&#x0D;&#x0A;- Original element: &apos;com.javacodegeeks.examples.jaxWsAnnotations.webresult.WSPublisher.java&apos;" description="Copy compilation unit" destination="=SOAPwithAnnotation/src&lt;helloservice.endpoint" element1="/src&lt;com.javacodegeeks.examples.jaxWsAnnotations.webresult{WSPublisher.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1568886615475" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,8 @@
+package p1;
+
+public class Data {
+
+	public void show() {
+		Demo obj=new Demo();
+	}
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="DepositAccount.jsp">
+<center>
+Account No:
+<input type="text" name="accountNo"/><br/><br/>
+Deposited Amount:
+<input type="text" name="city"/></br><br/>
+
+<input type="submit" value="Deposit"/>
+</body>
+</html>

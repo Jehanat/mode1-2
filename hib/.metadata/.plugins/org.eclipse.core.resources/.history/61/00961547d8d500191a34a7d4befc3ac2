@@ -1,0 +1,15 @@
+package com.jwt.service;
+
+import com.jwt.model.Exam;
+
+public interface ExamService 
+	{
+		public void addExam(Exam student);
+
+		public void deleteExam(Integer examId);
+
+		public Exam updateExam(Exam student);
+		
+	}
+
+

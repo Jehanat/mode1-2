@@ -1,0 +1,37 @@
+package com.hcl.boxing;
+
+public class StudentSearch {
+	
+	public Student showStudent(int sno)
+	{	Student student=null;
+	
+	if(sno==1){
+		student=new Student();
+		student.sno=1;
+		student.name="Jenny";
+		student.city="Delhi";
+		student.cgp=9;
+		
+	}
+	if(sno==2){
+		student=new Student();
+		student.sno=2;
+		student.name="Shrey";
+		student.city="Gurgaon";
+		student.cgp=8;
+		
+	}
+	return student;
+}
+public static void main(String[] args) {
+	StudentSearch objSearch=new StudentSearch();
+	Student res=objSearch.showStudent(3);
+	if(res!=null){
+		System.out.println(res);}
+	else{
+		System.out.println("Student not found");}
+	}
+	
+
+		
+	}

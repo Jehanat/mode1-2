@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="personalData" style="color: #0900c4;
+   font:Helvetica 12pt;border: 1px solid black;">
+   <b>Welcome to Personal Details Page</b><br/>
+   <p>
+   Hi I am Jehanat from Delhi..
+   I recently joined HCL as a fresher
+   </p>
+   </div><br/><br/>
+</body>
+</html>

@@ -1,0 +1,37 @@
+package com.hcl.student.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hcl.student.dao.StudentDAO;
+import com.hcl.student.model.Student;
+
+@Service
+
+public class StudentManagerImpl implements StudentService{
+	@Autowired
+	StudentDAO dao;
+
+	public String addStudent(Student student) {
+		
+		return dao.addStudent(student);
+	}
+
+	public List<Student> getStudent(int rollNum) {
+		return dao.getStudent(rollNum);
+	}
+
+	public void updateStudent(int rollNum) {
+		
+	}
+
+	
+	}
+	
+	
+
+	
+
+

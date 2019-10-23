@@ -1,0 +1,81 @@
+package com.jwt.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="Exam")
+public class Exam implements Serializable {
+	private static final long serialVersionUID = -3465813074586302847L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int examId;
+	@Column
+	private int mi;
+	@Column
+	private int sid;
+
+	
+	
+	
+	public int getSid() {
+		return sid;
+	}
+
+
+	public void setSid(int sid) {
+		this.sid = sid;
+	}
+
+
+	public int getMi() {
+		return mi;
+	}
+
+
+	public void setMi(int mi) {
+		this.mi = mi;
+	}
+	@Column
+	private double marks;
+	@Column
+	private String subName;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
+
+	public double getMarks() {
+		return marks;
+	}
+
+
+	public void setMarks(double marks) {
+		this.marks = marks;
+	}
+
+
+	public String getSubName() {
+		return subName;
+	}
+	public void setSubName(String subName) {
+		this.subName = subName;
+	}
+	public int getExamId() {
+		return examId;
+	}
+	public void setExamId(int examId) {
+		this.examId = examId;
+	}
+	
+	
+
+}

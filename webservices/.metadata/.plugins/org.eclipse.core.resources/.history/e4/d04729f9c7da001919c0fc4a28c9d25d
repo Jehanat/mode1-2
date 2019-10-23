@@ -1,0 +1,5 @@
+package helloservice.endpoint;
+
+public class MainApp {
+
+}

@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+function show(){
+	var radios=frmRadio.elements["gender"];
+	for(var i=0; i<radios.length;i++){
+		if(radius[i].checked){
+			gen=radios[i].value;
+		}
+	}
+	alert(gen);
+	
+}

@@ -1,0 +1,24 @@
+package hcl.com.practice3;
+
+class SupCon {
+	
+	int empno;
+	String name;
+	double basic;
+	
+	@Override
+	public String toString() {
+		return "Employ [empno=" + empno + ", name=" + name + ", basic=" + basic + "]";
+	}
+
+	public SupCon(int empno, String name, double basic) {
+		super();
+		this.empno = empno;
+		this.name = name;
+		this.basic = basic;
+	}
+	
+
+}
+public class SupCon{
+}

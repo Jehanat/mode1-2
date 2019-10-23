@@ -1,0 +1,9 @@
+package p1;
+
+public class Demo {
+
+	private int empno=1;
+	public String name="Jehanat";
+	protected String city="Delhi";
+	double basic=66457.55;
+}

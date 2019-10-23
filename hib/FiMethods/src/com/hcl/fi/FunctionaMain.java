@@ -1,0 +1,13 @@
+package com.hcl.fi;
+
+public class FunctionaMain {
+	public static void main(String[] args) {
+		FunctionalInterface1 employeeInterface1=Employee::new;
+		Employee employee1=employeeInterface1.employee(20);
+		FunctionalInterface2 employeeInterface2=Employee::new;
+		Employee employee2=employeeInterface2.employee("HCL");
+		
+		System.out.println(employee1.getEmpNo());
+		System.out.println(employee2.getEmpName());
+	}
+	}

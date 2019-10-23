@@ -1,0 +1,27 @@
+package com.hcl.inventory;
+
+import java.util.Scanner;
+
+
+
+
+public class AddStockMain {
+
+	public static void main(String[] args) {
+	String stockid=StockBAL.generateStockBal();
+	
+	//System.out.println(accountno);
+	Stock objStock=new Stock();
+	objStock.setStockid(stockid);
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Item Name:");
+	objStock.setItemName(sc.nextLine());
+	
+	objStock.setPrice(Integer.parseInt(sc.nextLine()));
+	System.out.println("Enter Price:");
+	objStock.setQuantityAvail(Integer.parseInt(sc.nextLine()));
+	System.out.println("Enter QuantityAvail:");
+	System.out.println(StockBAL.addStockBal(objStock));
+	}
+
+}

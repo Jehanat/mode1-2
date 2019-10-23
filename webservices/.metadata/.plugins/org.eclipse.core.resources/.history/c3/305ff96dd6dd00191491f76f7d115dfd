@@ -1,0 +1,70 @@
+package com.hcl.jason;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class ParseJson {
+
+	     public static void main(String[] args) {
+//		  BufferedReader objReader = null;
+	    	 JSONParser parser=new JSONParser();
+//		  String jsondata="";
+		  try {
+//		   String strCurrentLine;
+
+		   Object obj = parser.parse(new FileReader("C:\\Users\\Coalesce\\Downloads\\employee.json"));
+		   JSONObject jsonObject=(JSONObject)obj;
+		  
+		   
+		//   {  
+//////			  
+//			    JSONObject jsonObject = (JSONObject)objReader;  
+////		        JSONObject jsonObject = (JSONObject) obj;  
+			    int empno=(Integer)jsonObject.get("empno");
+			    String name = (String) jsonObject.get("empname");  
+			    double salary = (Double) jsonObject.get("salary");  
+			    String band = (String) jsonObject.get("band"); 
+			    String dateOfJoin=(String)jsonObject.get("dateOfJoin");
+			    JSONArray 
+//		        
+//			    System.out.println("Empno:" +empno);  
+//			    System.out.println("Employee Name:" +empno);  
+//			    System.out.println("Salary:" +salary);  
+//			    System.out.println("Band:" +band);  
+//			    System.out.println("dateOfJoin:" +dateOfJoin);  
+//			    
+//			}  
+		//	
+
+		   while ((strCurrentLine = objReader.readLine()) != null) {
+
+             jsondata += strCurrentLine + "\n";		   }
+
+		  } catch (IOException e) {
+
+		   e.printStackTrace();
+
+		  } finally {
+
+		   try {
+		    if (objReader != null)
+		     objReader.close();
+		   } catch (IOException ex) {
+		    ex.printStackTrace();
+		   }
+		  }
+		  JSONObject obj=new JSONObject();
+		  System.out.println("empno:" +obj.get(jsondata));
+		  System.out.println("empname:" +obj.get(jsondata));
+		  System.out.println("salary:" +obj.toJSONString());
+		  System.out.println("band:" +obj.toJSONString());
+		  System.out.println("dateOfJoin:" +obj.toJSONString());
+
+
+		 }
+		}

@@ -1,0 +1,9 @@
+package com.hcl.boxing;
+
+public class P7 {
+	static{
+		System.out.println("hi");
+	}
+
+}
+public class p

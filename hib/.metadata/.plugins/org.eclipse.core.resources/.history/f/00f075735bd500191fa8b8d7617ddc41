@@ -1,0 +1,48 @@
+package com.jwt.dao;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jwt.model.Exam;
+import com.jwt.model.Student;
+import com.jwt.model.Exam;
+
+public class ExamDAOImpl implements ExamDAO{
+
+	@Autowired
+	private SessionFactory sessionFactory;
+	public void addExam(Exam student) {
+		sessionFactory.getCurrentSession().saveOrUpdate(student);
+
+	
+	}
+
+	
+
+	@Override
+	public void deleteExam(Integer examId){
+		Exam student = (Exam) sessionFactory.getCurrentSession().load(
+				Exam.class, examId);
+		if (null != student) {
+			this.sessionFactory.getCurrentSession().delete(student);
+		}
+
+	}
+	@Override
+	public Exam updateExam(Exam student) {
+	sessionFactory.getCurrentSession().update(student);
+	return student;
+}
+
+
+	}
+
+	
+	
+	
+	
+	
+
+			

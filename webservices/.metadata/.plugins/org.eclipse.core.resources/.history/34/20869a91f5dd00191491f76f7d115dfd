@@ -1,0 +1,50 @@
+package com.hcl.employee.dao;
+
+import java.util.List;
+
+import javax.ws.rs.core.Response;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hcl.employee.model.Employee;
+
+
+public class EmployeeDaoImpl implements EmployeeDao {
+	
+	private SessionFactory sessionfactory;
+
+	@Override
+	public void addEmployee(Employee e) {
+		
+		sessionfactory.getCurrentSession().saveOrUpdate(e);
+
+		}
+	
+	
+
+	@Override
+	public void deleteEmployee(int id)  {
+		Employee employee = (Employee) sessionfactory.getCurrentSession().load(
+				Employee.class, id);
+		if (null != employee) {
+			this.sessionfactory.getCurrentSession().delete(employee);
+		}
+
+	}
+
+	@Override
+	
+	public Employee getEmployee(int id) {
+		return (Employee) sessionfactory.getCurrentSession().get(
+				Employee.class, id);
+	}
+
+	@Override
+	public List getAllEmployees() {
+
+		return sessionfactory.getCurrentSession().createQuery("from Employee")
+				.list();
+	}
+
+}

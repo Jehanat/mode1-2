@@ -1,0 +1,18 @@
+package com.hcl.threads;
+class Data{
+	void dispMsg(String name){
+		
+		System.out.println("Hello " +name);
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("How are you?");
+	}
+}
+public class SyncEx {
+
+}

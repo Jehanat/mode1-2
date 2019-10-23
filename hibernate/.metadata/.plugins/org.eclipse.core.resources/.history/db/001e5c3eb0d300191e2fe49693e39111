@@ -1,0 +1,82 @@
+<%@page import="com.hcl.student.dao.StudentDAOImpl"%>
+<%@page import="com.hcl.student.model.Student"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+<form method="get" action="/addStudent">
+Roll number:
+<input type="text" name="rollNum"/><br/><br/>
+
+Student Name:
+<input type="text" name="sName"/><br/><br/>
+
+Age:
+<input type="text" name="age"/><br/><br/>
+
+Gender:
+<input type="radio" id="choice1" 
+name="gender" value="Male">
+<label for="choice1">Male
+
+<input type="radio" id="choice2"
+name="gender" value="Female">
+<label for="choice2">Female</label><br/><br/>
+
+Country:
+<select name="Country" id="dropdown" >
+<option value="dropdown">Please select the country</option>
+<option value="India">India</option>
+<option value="UK">UK</option>
+<option value="USA">USA</option>
+<option value="Australia">Australia</option>
+</select><br/><br/>
+
+DateOfJoin:
+<input type="text" name="dateOfJoin"/><br/><br/>
+
+Final Score:
+<input type="text" name="finalScore"/><br/><br/>
+
+<center>
+<input type="submit" value="Add Student"/><br/><br/>
+</center>
+
+<%if(request.getParameter("rollNum")!=null &&
+request.getParameter("sName")!=null &&
+request.getParameter("age")!=null &&
+request.getParameter("gender")!=null &&
+request.getParameter("country")!=null &&
+request.getParameter("dateOfJoin")!=null &&
+request.getParameter("finalScore")!=null)
+
+{
+	Student s=new Student();
+	
+	s.setRollNum(Integer.parseInt(request.getParameter("rollNum")));
+	s.setsName(request.getParameter("sName"));
+	s.setAge(Integer.parseInt(request.getParameter("age")));
+	s.setGender(request.getParameter("gender"));
+	s.setCountry(request.getParameter("country"));
+	s.getDateOfJoin();
+	s.setFinalScore(Integer.parseInt(request.getParameter("finalScore")));
+
+	StudentDAOImpl st=new  StudentDAOImpl();
+	out.println(st.addStudent(s));
+
+
+}
+
+
+%>
+
+</center>
+</form>
+</body>
+</html>

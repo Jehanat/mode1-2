@@ -1,0 +1,17 @@
+package com.hcl.abs;
+
+public class Frog extends Animal {
+
+	@Override
+	void name() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	void type() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

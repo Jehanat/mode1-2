@@ -1,0 +1,36 @@
+package com.hcl.threads;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class ListDemo implements Runnable{
+
+	@Override
+	public void run() {
+		List lstData=new ArrayList();
+		lstData.add("Keerthana");
+		lstData.add("Yash");
+		lstData.add("Amit");
+		lstData.add("Raghu");
+		lstData.add("Sai");
+		lstData.add("Krishna");
+		
+		for(Object object : lstData){
+			System.out.println(object);
+			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
+		}
+		
+	}
+	
+}
+public class ThrImp {
+public static void main(String[] args) {
+	
+}
+}

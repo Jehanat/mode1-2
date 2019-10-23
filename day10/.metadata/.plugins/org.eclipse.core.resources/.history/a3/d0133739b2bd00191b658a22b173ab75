@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+function gotCursor(){
+	//alert("Cursor Placed");
+	frmData.firstName.value="";
+	
+}
+function lostCursor(){
+	//alert("Cursor Left Current Control");
+	frmData.lastName.value="";
+}
+	var firstName="Jehanat";
+	var lastName="Jamil";
+	var fullName=firstName.concat(lastName);

@@ -1,0 +1,13 @@
+package String;
+
+public class StringFunc {
+	public static void main(String[] args) {
+		String s1="Shrey";
+		String s2="Jenny";
+		System.out.println("String length is"+s1.length());
+		System.out.println("String length is"+s2.length());
+		System.out.println(s1.equals(s2));
+		
+	}
+
+}

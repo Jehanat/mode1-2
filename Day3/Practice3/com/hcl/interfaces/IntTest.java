@@ -1,0 +1,34 @@
+package com.hcl.interfaces;
+interface IFirst{
+	default void name(){
+		System.out.println("Name of IFirst");
+	}
+	
+}
+interface ISecond{
+	default void name(){
+		System.out.println("Name of ISecond");
+	}
+}
+interface IThird{
+	default void name(){
+		System.out.println("Name of IThird");
+	}
+}
+class Demo implements IFirst,ISecond,IThird{
+
+	@Override
+	public void name() {
+		IFirst.super.name();
+	    ISecond.super.name();
+	    IThird.super.name();
+		
+	}
+	
+}
+public class IntTest {
+	public static void main(String[] args) {
+		new Demo().name();
+	}
+
+}

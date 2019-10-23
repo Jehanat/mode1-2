@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source folder &apos;CollectionsProject/project.properties&apos; to &apos;projectresources&apos;&#x0D;&#x0A;- Original project: &apos;CollectionsProject&apos;&#x0D;&#x0A;- Original element: &apos;CollectionsProject/project.properties&apos;&#x0D;&#x0A;- Renamed element: &apos;project.properties&apos;" description="Rename source folder &apos;project.properties&apos;" id="org.eclipse.jdt.ui.rename.source.folder" input="/project.properties" name="projectresources" stamp="1565065242757" version="1.0"/>
+</session>

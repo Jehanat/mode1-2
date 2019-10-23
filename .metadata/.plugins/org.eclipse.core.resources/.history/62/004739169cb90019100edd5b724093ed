@@ -1,0 +1,61 @@
+package com.hcl.bank;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class AccountDAO {
+
+	
+	PreparedStatement pst;
+	Connection con;
+	
+	public String createAccountDao(Accounts objAccounts){
+	con=DaoConnection.getConnection();
+	String cmd="Insert into accounts(accountno,firstname,lastname,city,state,amount,cheqfacil,accountType) values(?,?,?,?,?,?,?,?)";
+	String result="";
+	try {
+		pst=con.prepareStatement(cmd);
+		pst.setInt(1, objAccounts.getAccountNo());
+		pst.setString(2, objAccounts.getFirstName());
+		pst.setString(3, objAccounts.getLastName());
+		pst.setString(4, objAccounts.getCity());
+		pst.setString(5, objAccounts.getState());
+		pst.setInt(6, objAccounts.getAmount());
+		pst.setString(7, objAccounts.getCheqfacil());
+		pst.setString(8, objAccounts.getAccountType());
+		pst.executeUpdate();
+		result="Accounts created successfully";
+		
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+		result=e.getMessage();
+		
+	}
+	return result;
+	}
+	
+	
+
+	public int generateAccountNoDao() {
+		con=DaoConnection.getConnection();
+		int accno=0;
+		String cmd="select case when max(accountNo) is NULL"+" Then 1 else max(accountNo)+1 END accno"+"from accounts";
+          
+		try {
+			pst=con.prepareStatement(cmd);
+			ResultSet rs=pst.executeQuery();
+			rs.next();
+			accno=rs.getInt("accno");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+ return accno;
+
+}
+
+}
+

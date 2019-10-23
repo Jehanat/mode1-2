@@ -1,0 +1,5 @@
+package com.helloservice.endpoint;
+
+public class Hello {
+
+}

@@ -1,0 +1,15 @@
+127.0.0.1 - - [11/Sep/2019:09:30:46 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:30:47 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 500 13497
+127.0.0.1 - - [11/Sep/2019:09:31:57 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:31:59 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 555
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:33:19 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 555
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:33:19 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:33:21 +0530] "GET /SpringMVCHibernateCRUD/newEmployee HTTP/1.1" 200 1260
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:34:05 +0530] "POST /SpringMVCHibernateCRUD/saveEmployee HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:34:05 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 832
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:34:09 +0530] "GET /SpringMVCHibernateCRUD/editEmployee?id=25 HTTP/1.1" 200 1310
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:34:10 +0530] "POST /SpringMVCHibernateCRUD/saveEmployee HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:34:11 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 832
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:34:30 +0530] "GET /SpringMVCHibernateCRUD/editEmployee?id=25 HTTP/1.1" 200 1310
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:34:38 +0530] "POST /SpringMVCHibernateCRUD/saveEmployee HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Sep/2019:09:34:38 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 836

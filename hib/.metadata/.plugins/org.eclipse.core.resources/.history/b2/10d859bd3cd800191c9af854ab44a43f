@@ -1,0 +1,16 @@
+package com.shrey.samples.java8;
+
+public class MultiLambExp {
+public static void main(String[] args) {
+	MultiInterface MultiInterface1= ( name)-> (name + " Jenny");
+	
+	System.out.println(MultiInterface1.sayHello("Hello"));
+	System.out.println(MultiInterface.add(6,2));
+	System.out.println(MultiInterface1.defaultMethod(10));
+	MultiInterface MultiInterface2= ( name)-> (name + " Jenny");
+
+	System.out.println(MultiInterface1.equals(MultiInterface2));
+	
+}
+
+}

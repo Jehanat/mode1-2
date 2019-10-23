@@ -1,0 +1,52 @@
+package com.jwt.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.jwt.dao.ExamDAO;
+import com.jwt.model.Exam;
+
+@Service
+@Transactional
+public class ExamServiceImpl implements ExamService{
+
+@Autowired
+private ExamDAO examDAO;
+
+@Override
+@Transactional
+public void addExam(Exam employee) {
+examDAO.addExam(employee);
+}
+
+@Override
+@Transactional
+public List<Exam> getAllExams() {
+return examDAO.getAllExams();
+}
+
+@Override
+@Transactional
+public void deleteExam(Integer employeeId) {
+examDAO.deleteExam(employeeId);
+}
+
+public Exam getExam(int empid) {
+return examDAO.getExam(empid);
+}
+
+public Exam updateExam(Exam employee) {
+// TODO Auto-generated method stub
+return examDAO.updateExam(employee);
+}
+
+public void setExamDAO(ExamDAO employeeDAO) {
+this.examDAO = employeeDAO;
+}
+
+
+
+}

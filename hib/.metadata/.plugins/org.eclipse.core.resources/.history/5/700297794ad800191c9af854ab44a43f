@@ -1,0 +1,8 @@
+package com.hcl.fi;
+@FunctionalInterface
+public interface InstanceInterface {
+	
+	public void myInterface();
+	
+
+}

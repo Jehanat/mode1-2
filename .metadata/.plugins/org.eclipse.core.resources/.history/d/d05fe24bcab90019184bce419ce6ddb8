@@ -1,0 +1,10 @@
+package com.hcl.inventory;
+
+
+public class StockBAL {
+	public static String addStockBal() {
+		return new StockDAO().addStockidDao();}
+	
+	public static String generateStockBal() {
+		return new StockDAO().generateStockidDao();
+}}

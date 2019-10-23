@@ -1,0 +1,17 @@
+package hcl.com.practice3;
+
+public class Attendance {
+	public static void show(int day,String...name){
+		for(String s : name){
+			System.out.print(day + " ");
+		}
+		System.out.println();
+	}
+	public static void main(String[] args) {
+		show(1);
+		show(2,"Jenny","Shrey");
+		show(3,"Jenny","Shrey","Sharry");
+		show(4,"Sharry","Mona");}
+
+
+}

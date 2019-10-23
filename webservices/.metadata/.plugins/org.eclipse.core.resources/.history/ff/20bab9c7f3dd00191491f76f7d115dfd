@@ -1,0 +1,5 @@
+package com.hcl.employee.dao;
+
+public interface Employee {
+
+}

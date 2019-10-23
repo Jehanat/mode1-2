@@ -1,0 +1,48 @@
+package com.hcl.project;
+
+import java.util.List;
+
+public class StudentBAL {
+StringBuilder sb=new StringBuilder();
+public boolean addStudentBAl(Student objStudent) throws StudentException{
+	boolean isAdded=true;
+	if(objStudent.getSno()<=0){
+		sb.append("StudentNo cannot be Negative or Zero\r\n");
+		isAdded=false;
+	}
+	if(objStudent.getName().length()<=3){
+		sb.append("Name More than three characters\r\n");
+		isAdded=false;
+	}
+	if(objStudent.getCity().length()<=3){
+		sb.append("City more than three characters\r\n");
+	}
+	if(objStudent.getCgpa()<0){
+		sb.append("Cgpa is non-negative\r\n");
+		isAdded=false;
+	}
+	if(isAdded==false){
+		throw new StudentException(sb.toString());
+	}
+	else{
+		new StudentDAO().addStudentDao(objStudent);
+	}
+	return isAdded;
+			
+	}
+public Student searchStudentBal(int sno){
+	return new StudentDAO().searchStudentDao(sno);
+}
+public List<Student>showsStudentBal(){
+	return new StudentDAO().showsStudentDao();
+	
+}
+public String updatesStudentBal(Student objStudent){
+	return new StudentDAO().updateStudentDao(objStudent);
+}
+public String deleteStudentBal(int sno){
+	return new StudentDAO().deleteStudentDao(sno);
+	
+}
+}
+

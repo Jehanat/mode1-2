@@ -1,0 +1,10 @@
+package com.hcl.bank;
+
+public class CreateAccountMain {
+	public static void main(String[] args) {
+	int accountno=AccountBAL.generateAccountBal();
+	System.out.println(accountno);
+}
+
+
+}

@@ -1,0 +1,13 @@
+package com.shrey.samples.java8;
+
+public class LambdaMax {
+
+public static  void main(String[] args) {
+	MyMaxInterface myMaxInterface= (a,b)-> {int max =a>b ? a:b ; return max ;} ;
+	int max=myMaxInterface.maxNumbs(10, 20);
+	System.out.println(max);
+	
+	
+}
+}
+

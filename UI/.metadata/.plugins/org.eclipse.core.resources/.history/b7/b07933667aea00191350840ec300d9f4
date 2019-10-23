@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="action_page.jsp">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please Register Yourself to create an account.</p>
+    <hr>
+        First Name : <input type="text" name="firstname" size="25"> <br/><br/>
+		Last Name : <input type="text" name="lastname" size="25"> <br/><br/>
+		Phone Number:<input type="text" name="number" size="25"> <br/><br/>
+		Email Address:<input type="text" name="number" size="25"> <br/><br/>
+		Password:<input type="password" name="number" size="25"> <br/><br/>
+		
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+</body>
+</html>

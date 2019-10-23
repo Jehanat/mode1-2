@@ -1,0 +1,10 @@
+2019-09-17 13:42:04,490 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\hcljava\java8\DemoJava8\pom.xml
+2019-09-17 13:42:06,101 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: hcl:DemoJava8:0.0.1-SNAPSHOT @ C:\hcljava\java8\DemoJava8\pom.xml.
+2019-09-17 13:42:07,851 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DemoJava8/src/main/java
+2019-09-17 13:42:07,852 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DemoJava8/src/main/resources
+2019-09-17 13:42:07,853 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DemoJava8/src/test/java
+2019-09-17 13:42:11,876 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 7 sec
+2019-09-17 13:42:13,667 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-09-17 13:42:13,696 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-09-17 13:42:13,721 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-09-17 13:42:13,809 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\hcljava\java8\DemoJava8\src\test\resources

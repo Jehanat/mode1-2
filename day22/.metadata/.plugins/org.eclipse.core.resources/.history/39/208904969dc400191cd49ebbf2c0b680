@@ -1,0 +1,11 @@
+package com.hcl.beans;
+
+public class EmployInsert {
+
+	private int empno;
+	private String name;
+	private String dept;
+	private String desig;
+	private int basic;
+
+}

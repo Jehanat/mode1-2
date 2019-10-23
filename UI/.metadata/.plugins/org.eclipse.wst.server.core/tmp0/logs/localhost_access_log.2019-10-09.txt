@@ -1,0 +1,15 @@
+127.0.0.1 - - [09/Oct/2019:15:16:12 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:16:13 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 964
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:19:52 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 990
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:20:38 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 940
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:20:53 +0530] "GET /UserInterface/registrationform.css HTTP/1.1" 200 1020
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:21:45 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 965
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:23:35 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 972
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:24:44 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 1003
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:26:23 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 1022
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:26:55 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 1042
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:27:25 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 1043
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:27:58 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 1053
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:27:59 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:32:13 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 1169
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:15:34:36 +0530] "GET /UserInterface/registrationform.html HTTP/1.1" 200 1194

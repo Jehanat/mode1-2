@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<a href="rest/hello">Click Here</a>
+<a href="rest/hello/PLAIN">Click Here</a>
+<a href="rest/hello/XML">Click Here</a>
+<a href="rest/hello/HTML">Click Here</a>
+</body>
+</html>

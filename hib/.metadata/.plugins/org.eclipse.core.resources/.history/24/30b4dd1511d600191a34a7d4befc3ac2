@@ -1,0 +1,18 @@
+package com.jwt.dao;
+
+import java.util.List;
+
+import com.jwt.model.Exam;
+import com.jwt.model.Student;
+import com.jwt.model.Exam;
+
+public interface ExamDAO {
+	public void addExam(Exam student);
+	public List<Exam> getAllExam();
+
+	public void deleteExam(Integer examId);
+
+	public Exam updateExam(Exam student);
+	public Exam getExam(int examid);
+
+}

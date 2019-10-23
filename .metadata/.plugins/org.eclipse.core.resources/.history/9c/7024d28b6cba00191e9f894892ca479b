@@ -1,0 +1,34 @@
+package com.hcl.bank;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class AccountTestCase {
+
+	@Test
+	public void testGettersAndSetters() {
+		
+		Accounts objAccounts=new Accounts();
+		objAccounts.setAccountNo(1);
+		objAccounts.setFirstName("Sai");
+		objAccounts.setLastName("Krishna");
+		objAccounts.setCity("Bangalore");
+		objAccounts.setState("KA");
+		objAccounts.setAmount(88822);
+		objAccounts.setCheqfacil("Yes");
+		objAccounts.setAccountType("Savings");
+		
+		assertEquals(1,objAccounts.getAccountNo());
+		assertEquals("Sai",objAccounts.getFirstName());
+		assertEquals("Krishna",objAccounts.getLastName());
+		assertEquals("Bangalore",objAccounts.getCity());
+		assertEquals("KA",objAccounts.getState());
+		assertEquals(88822,objAccounts.getAmount());
+		assertEquals("Yes",objAccounts.getCheqfacil());
+		assertEquals("Savings",objAccounts.getAccountType());
+		
+		
+	}
+
+}

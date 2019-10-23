@@ -1,0 +1,5 @@
+package com.jwt.model;
+
+public interface GradeInterface {
+
+}

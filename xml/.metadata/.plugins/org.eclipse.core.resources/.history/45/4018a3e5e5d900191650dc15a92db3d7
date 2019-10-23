@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:SchemaLocation="employee.xsd">
+
+<employeedata>
+
+  <employee category = "Contractor">
+    <empNo> 1  </empNo>
+    <empName> Jehanat </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-17 </dateOfJoin>
+  </employee>
+<employee category ="Manager">
+    <empNo> 2 </empNo>
+    <empName> Shresth </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-17 </dateOfJoin>
+  </employee>
+<employee category ="Engineer">
+    <empNo> 3 </empNo>
+    <empName> Ashraf </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-17 </dateOfJoin>
+  </employee>
+
+ </employeedata>

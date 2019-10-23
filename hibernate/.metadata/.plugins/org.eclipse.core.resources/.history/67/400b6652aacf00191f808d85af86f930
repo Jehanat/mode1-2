@@ -1,0 +1,100 @@
+<%@page import="com.hcl.hib.CollegeCrud"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="select.jsp" name="frmFeedback">
+      Select Instructor:
+<select name="instructor"  onchange="change()">
+<option value="please select">Please select the Instructor</option>
+    <%
+     List<String> lstinstr=new CollegeCrud().getInstructors();
+for(String s : lstinstr){
+%>
+
+<option value=<%=s %>><%=s%> </option>
+<%
+}
+%>
+
+    </select>
+    
+        <%
+   
+    session.setAttribute("instructor",request.getParameter("instructor"));
+  
+%> 
+        
+        
+    Select Subject:
+   <select name="subject" >
+<option value="dropdown"></option>
+<%
+String instr=request.getParameter("instructor");
+session.setAttribute("instructor",instr);
+		
+		List<String> lstinstr1=new CollegeCrud().subjectList(instr);
+		for(String s : lstinstr1){
+
+			%>
+		<option value=<%=s%> ><%=s%></option>
+	
+	<%
+		}
+	
+	%>
+		
+
+</select>
+<br/><br/>
+    
+		
+	Subjects taken:
+	<select name="subject" onchange="change1()">
+		 <option value="dropdown"> </option>
+         <%
+         
+ 		String instr1=request.getParameter("instructor");
+
+        	 session.setAttribute("instr1", instr);	 
+
+         
+ 	 	    
+ 		
+        	 List<String> lstinstr2=new CollegeCrud().subjectList(instr);
+     		for(String s : lstinstr2){
+	%>
+	<option value=<%=s %>><%=s%></option>
+	<%
+		}
+	%>
+	
+	</select>
+	
+	
+</center>
+</form>
+
+<script>
+function change1() {
+    document.frmFeedback.submit();
+}
+        function change(){
+          
+           document.frmFeedback.submit();
+     
+        }
+        </script>
+   <%
+   	  String subject=request.getParameter("subject");
+   	  session.setAttribute("subject", subject);
+   %>
+ <a href="dashboard.jsp">Dash Board</a>
+</body>
+</html>

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Sep 23 17:48:33 IST 2019
+org.eclipse.jst.j2ee.server\:JavaDemoServer=WEB-INF/lib/JavaDemoServer.jar
+org.eclipse.jst.j2ee.server\:FaultDemo=WEB-INF/lib/FaultDemo.jar

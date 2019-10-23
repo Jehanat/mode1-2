@@ -1,0 +1,68 @@
+package com.hcl.inventory;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class StockDAO {
+
+	
+	PreparedStatement pst;
+	Connection con;
+	
+	
+	public String createStockid(Stock objStock){
+		con=DaoConnection.getConnection();
+		String cmd="Insert into stock(Stockid,ItemName,Price,QuantityAvail) values(?,?,?,?)";
+		String result="";
+		try {
+			pst=con.prepareStatement(cmd);
+			pst.setString(1, objStock.getStockid());
+			pst.setString(2, objStock.getItemName());
+			pst.setInt(3, objStock.getPrice());
+			pst.setInt(4, objStock.getQuantityAvail());
+			pst.executeUpdate();
+			result="Stock created successfully";
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			result=e.getMessage();
+			
+		}
+		return result;
+		
+	}
+	public String generateStockidDao() {
+		con=DaoConnection.getConnection();
+		String stockid;
+		String cmd="Select max(stockId) sid from stock";
+		String stid="";
+		
+			try {
+				PreparedStatement pst=con.prepareStatement(cmd);
+				ResultSet rs=pst.executeQuery();
+				rs.next();
+				stid=rs.getString("sid");
+				int id=Integer.parseInt(stid.substring(1));
+				id++;
+				if(id>= 1 && id<=9){
+					stid="S00"+id;
+					
+				}
+				if(id>=10 && id<=99 ){
+					stid="SO"+id;
+				}
+				if(id>=100 && id<=999){
+					stid="S+id";
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return stid;
+		}
+
+	}
+	
+		

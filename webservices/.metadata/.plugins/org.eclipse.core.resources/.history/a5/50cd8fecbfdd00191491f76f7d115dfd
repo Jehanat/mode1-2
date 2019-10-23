@@ -1,0 +1,47 @@
+package com.hcl.json;
+
+import java.util.Scanner;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;  
+public class JsonExample3 {    
+public static void main(String args[]){  
+	JSONArray obj = new JSONArray(); 
+	for(int i=0;i<3;i++){
+  JSONArray arr = new JSONArray();  
+  
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Name:")
+  String name=sc.next();
+   
+  System.out.println("salary:");
+  Float salary=sc.nextFloat();
+ 
+    
+  System.out.println("age:");
+  int age=sc.nextInt();
+  System.out.println("age:");
+  arr.add(sc.nextLine());  
+
+  
+  arr.add(name);    
+  arr.add(salary);
+  arr.add(age);
+  obj.add(i, arr);
+	}
+	System.out.println(obj);}}
+  
+//  arr.add(new Integer(27));    
+//  arr.add(new Double(600000));   
+//  arr.add("Shresth");    
+//  arr.add(new Integer(27));    
+//  arr.add(new Double(600000));  
+//  arr.add("Zirgham");    
+//  arr.add(new Integer(27));    
+//  arr.add(new Double(600000));  
+//  arr.add("Saba");    
+//  arr.add(new Integer(27));    
+//  arr.add(new Double(600000));  
+//  System.out.println(arr);
+//  
+//}}    }

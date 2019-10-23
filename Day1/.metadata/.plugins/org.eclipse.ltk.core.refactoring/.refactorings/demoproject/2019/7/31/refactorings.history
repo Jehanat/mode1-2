@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.hcl.obj.Mults.java&apos; to &apos;Agent.java&apos;&#x0D;&#x0A;- Original project: &apos;demoproject&apos;&#x0D;&#x0A;- Original element: &apos;com.hcl.obj.Mults.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.hcl.obj.Agent.java&apos;" description="Rename compilation unit &apos;Mults.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.hcl.obj{Mults.java" name="Agent.java" references="false" stamp="1564398091678" version="1.0"/>
+</session>

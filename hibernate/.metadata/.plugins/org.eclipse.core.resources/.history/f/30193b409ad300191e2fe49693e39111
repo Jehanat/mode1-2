@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="get" action="addStudent.jsp">
+Rollnum:
+<input type="text" name="rollNum"/>
+
+SName:
+<input type="text" name="sName"/>
+
+Age:
+<input type="text" name="age"/>
+
+Gender:
+<input type="radio" id="choice1" 
+name="gender" value="Male">
+<label for="choice1">Male</label>
+
+<input type="radio" id="choice2"
+name="gender" value="Female">
+<label for="choice2">Female</label>
+
+Country:
+<select name="Country" id="dropdown" onchange="change()">
+<option value="dropdown">Please select the option</option>
+<option value="India">India</option>
+<option value="UK">UK</option>
+<option value="USA">USA</option>
+<option value="Australia">Australia</option>
+
+DateOfJoin:
+<input type="text" name="dateOfJoin"/>
+
+Final Score:
+<input type="text" name="finalScore"/>
+
+<input type="submit" value="Submit"/><br/><br/>
+
+
+</form>
+</body>
+</html>

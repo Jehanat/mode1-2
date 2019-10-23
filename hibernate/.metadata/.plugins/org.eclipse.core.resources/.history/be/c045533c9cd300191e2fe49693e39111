@@ -1,0 +1,5 @@
+package com.hcl.student.model;
+
+public class Student {
+
+}

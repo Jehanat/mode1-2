@@ -1,0 +1,5 @@
+package com.javacodegeeks.examples.jaxWsAnnotations.client;
+
+public class MainApplication {
+
+}

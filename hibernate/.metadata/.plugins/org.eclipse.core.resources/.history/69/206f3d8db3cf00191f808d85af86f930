@@ -1,0 +1,18 @@
+package com.hcl.hib;
+
+import java.sql.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Booking")
+public class Booking {
+	 private String BookId ;
+	 private String RoomID;
+	 private String CustName;
+	 private String City ;
+	  private Timestamp BookDate ;
+	  private Timestamp ChkDate ;
+
+}

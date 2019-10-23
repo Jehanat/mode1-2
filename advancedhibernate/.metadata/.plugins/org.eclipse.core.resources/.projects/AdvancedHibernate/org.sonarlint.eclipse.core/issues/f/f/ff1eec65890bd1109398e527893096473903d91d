@@ -1,0 +1,22 @@
+
+gsquid:S1854"5Remove this useless assignment to local variable "q".(–ÅàûÿÿÿÿHàRMAJORZ
+CODE_SMELL
+‚squid:CallToDeprecatedMethod"?Remove this use of "AnnotationConfiguration"; it is deprecated.(‚™ñ“üÿÿÿÿHáRMINORZ
+CODE_SMELL
+~squid:CallToDeprecatedMethod";Remove this use of "buildSessionFactory"; it is deprecated.(òÈ¿şÿÿÿÿHâRMINORZ
+CODE_SMELL
+j
+squid:S106+"9Replace this use of System.out or System.err by a logger.(‰’ôüÿÿÿÿHãRMAJORZ
+CODE_SMELL
+Xsquid:S1481"&Remove this unused "q" local variable.(–ÅàûÿÿÿÿHäRMINORZ
+CODE_SMELL
+}squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ôÅÖçûÿÿÿÿHåRMAJORZ
+CODE_SMELL
+}squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ü½„äüÿÿÿÿHæRMAJORZ
+CODE_SMELL
+}squid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(Æ°ç¼ıÿÿÿÿHçRMAJORZ
+CODE_SMELL
+xsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(Ö¦ƒ´HèRMAJORZ
+CODE_SMELL
+xsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(Ú­Ş¢HéRMAJORZ
+CODE_SMELL

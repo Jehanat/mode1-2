@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<employeedata 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          SchemaLocation="employee.xsd">
+
+
+
+  <employee category = "Contractor">
+    <empNo> 1 </empNo>
+    <empName> Jehanat </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee>
+<employee category ="Manager">
+    <empNo>2</empNo>
+    <empName> Shresth </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee>
+<employee category ="Engineer">
+    <empNo> 3 </empNo>
+    <empName> Ashraf </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee>
+  <employee category = "Student">
+    <empNo> 4 </empNo>
+    <empName> Salman </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee>
+  <employee category = "Teacher">
+    <empNo> 5  </empNo>
+    <empName> Meenu </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee><employee category = "TL">
+    <empNo> 6 </empNo>
+    <empName> Riya </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee><employee category = "Servant">
+    <empNo> 7 </empNo>
+    <empName> Ainy </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee><employee category = "Cook">
+    <empNo> 8 </empNo>
+    <empName> Sikha </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee><employee category = "Banker">
+    <empNo> 9 </empNo>
+    <empName> Saba </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee><employee category = "Admin">
+    <empNo> 10  </empNo>
+    <empName> Coco </empName>
+    <salary> 40000 </salary>
+    <band> M </band>
+    <dateOfJoin> 2019-09-19 </dateOfJoin>
+  </employee>
+
+ </employeedata>

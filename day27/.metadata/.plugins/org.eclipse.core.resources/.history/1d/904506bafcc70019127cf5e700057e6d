@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body style="width: 500%; height:500%;">
+<div style="top:  50%; left: 50%; position: absolute;">
+<div> Leave Management Application</div>
+</div>
+</body>
+</html>

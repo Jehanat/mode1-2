@@ -1,0 +1,10 @@
+package com.hcl.ex;
+
+public class Quiz {
+	public static void main(String[] args) {
+		int[] a=new int[]{12,5,3};
+		
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.hcl.jason.model;
+
+public class Employee {
+
+}

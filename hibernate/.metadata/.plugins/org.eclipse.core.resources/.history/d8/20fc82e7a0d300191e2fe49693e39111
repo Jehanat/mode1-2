@@ -1,0 +1,19 @@
+package com.hcl.student.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.hcl.student.model.Student;
+
+
+
+public interface StudentDAO {
+	public String addStudent(Student student);
+	public String getStudent(int rollNum);
+	public String updateStudent(int rollNum);
+
+	
+}

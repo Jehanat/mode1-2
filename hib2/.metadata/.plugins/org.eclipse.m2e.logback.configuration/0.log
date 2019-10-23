@@ -1,0 +1,13 @@
+2019-09-17 18:22:36,974 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.jwt.spring:SpringMVCHibernateCRUD:1.0-SNAPSHOT @ C:\Users\Coalesce\Downloads\SpringMVCHibernateCRUD\pom.xml.
+2019-09-17 18:22:40,336 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCHibernateCRUD/src/main/java
+2019-09-17 18:22:40,337 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCHibernateCRUD/src/main/resources
+2019-09-17 18:22:40,338 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCHibernateCRUD/src/test/java
+2019-09-17 18:22:42,842 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 7 sec
+2019-09-17 18:22:46,033 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-09-17 18:22:46,171 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-17 18:22:46,184 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-09-17 18:22:46,224 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Coalesce\Downloads\SpringMVCHibernateCRUD\src\test\resources
+2019-09-17 18:24:26,715 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-09-17 18:24:26,799 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-09-17 18:24:26,805 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-09-17 18:24:26,829 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Coalesce\Downloads\SpringMVCHibernateCRUD\src\test\resources

@@ -1,0 +1,54 @@
+package org.apache.xml.axis.wsdd;
+
+public class AdminProxy implements org.apache.xml.axis.wsdd.Admin {
+  private String _endpoint = null;
+  private org.apache.xml.axis.wsdd.Admin admin = null;
+  
+  public AdminProxy() {
+    _initAdminProxy();
+  }
+  
+  public AdminProxy(String endpoint) {
+    _endpoint = endpoint;
+    _initAdminProxy();
+  }
+  
+  private void _initAdminProxy() {
+    try {
+      admin = (new org.apache.xml.axis.wsdd.AdminServiceLocator()).getAdminService();
+      if (admin != null) {
+        if (_endpoint != null)
+          ((javax.xml.rpc.Stub)admin)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);
+        else
+          _endpoint = (String)((javax.xml.rpc.Stub)admin)._getProperty("javax.xml.rpc.service.endpoint.address");
+      }
+      
+    }
+    catch (javax.xml.rpc.ServiceException serviceException) {}
+  }
+  
+  public String getEndpoint() {
+    return _endpoint;
+  }
+  
+  public void setEndpoint(String endpoint) {
+    _endpoint = endpoint;
+    if (admin != null)
+      ((javax.xml.rpc.Stub)admin)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);
+    
+  }
+  
+  public org.apache.xml.axis.wsdd.Admin getAdmin() {
+    if (admin == null)
+      _initAdminProxy();
+    return admin;
+  }
+  
+  public java.lang.Object adminService(java.lang.Object part) throws java.rmi.RemoteException{
+    if (admin == null)
+      _initAdminProxy();
+    return admin.adminService(part);
+  }
+  
+  
+}

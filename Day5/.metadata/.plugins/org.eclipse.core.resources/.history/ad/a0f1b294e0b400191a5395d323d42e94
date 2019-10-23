@@ -1,0 +1,12 @@
+package com.hcl.ex;
+
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
+
+public class DataOut {
+	public static void main(String[] args) {
+		
+		DataOutputStream dout= new DataOutputStream(new FileOutputStream("c:/files/data.txt"));
+	}
+
+}

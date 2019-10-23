@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+function lostCursor(){
+var firstName=frmName.firstName.value;
+	var lastName=frmName.lastName.value;
+	var fullName= frmName.firstName.value+""+frmName.lastName.value;
+	

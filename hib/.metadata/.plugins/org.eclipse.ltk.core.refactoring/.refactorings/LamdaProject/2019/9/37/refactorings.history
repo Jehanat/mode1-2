@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.jenny.samples.java8&apos; to &apos;LambdaExp/src&apos;&#x0D;&#x0A;- Original project: &apos;LamdaProject&apos;&#x0D;&#x0A;- Destination element: &apos;LambdaExp/src&apos;&#x0D;&#x0A;- Original element: &apos;LamdaProject/src/com.jenny.samples.java8&apos;" description="Copy package" destination="=LambdaExp/src" element1="/src&lt;com.jenny.samples.java8" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1568355487621" version="1.0"/>
+</session>

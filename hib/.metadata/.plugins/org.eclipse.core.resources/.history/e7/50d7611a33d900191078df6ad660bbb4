@@ -1,0 +1,78 @@
+package jenny.java8streams.controller;
+
+import java.io.IOException;
+import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+
+import jenny.java8streams.model.Employee;
+import jenny.java8streams.service.EmployeeService;
+
+@Controller
+public class EmployeeController {
+
+	
+
+		private static final Logger logger = Logger
+				.getLogger(EmployeeController.class);
+
+		public EmployeeController() {
+			logger.info("This is Jenny's Program");
+			System.out.println("EmployeeController()");
+		}
+
+		@Autowired
+		private EmployeeService employeeService;
+
+		@RequestMapping(value = "/")
+		public ModelAndView listEmployee(ModelAndView model) throws IOException {
+			logger.debug("debug:" +new Date() +this.getClass()+"listEmployee()" +"entering into");
+
+			List<Employee> listEmployee = employeeService.getAllEmployees();
+			logger.debug("debug:" +new Date() +this.getClass()+"listEmployee()" +"Calling the employee service");
+			model.addObject("listEmployee", listEmployee);
+			
+			model.addObject("searchEmployee", new Employee());
+
+			logger.debug("debug:" +new Date() +this.getClass()+"listEmployee()" +"employee service calling is completed and no of employees");
+
+			model.setViewName("home");
+			logger.debug("debug:" +new Date() +this.getClass()+"listEmployee()" +"redirect to home");
+            
+			
+			return model;
+		}
+		
+		@RequestMapping(value = "/")
+		public ModelAndView searchEmployees(ModelAndView model,@ModelAttribute Employee searchEmployee) throws IOException {
+			logger.debug("debug:" +new Date() +this.getClass()+"listEmployee()" +"entering into");
+
+			List<Employee> listEmployee = employeeService.getAllEmployees();
+			logger.debug("debug:" +new Date() +this.getClass()+"listEmployee()" +"Calling the employee service");
+			listEmployee=listEmployee.stream().filter((var) ->var.getEmpName().startsWith(searchEmployee.getEmpName())).collect(Collectors.toList());
+			
+			model.addObject("listEmployee", listEmployee);
+			
+			model.addObject("searchEmployee", new Employee());
+
+			logger.debug("debug:" +new Date() +this.getClass()+"listEmployee()" +"employee service calling is completed and no of employees");
+
+			model.setViewName("home");
+			logger.debug("debug:" +new Date() +this.getClass()+"listEmployee()" +"redirect to home");
+            
+			
+			return model;
+		}
+		
+		
+		}
+
+

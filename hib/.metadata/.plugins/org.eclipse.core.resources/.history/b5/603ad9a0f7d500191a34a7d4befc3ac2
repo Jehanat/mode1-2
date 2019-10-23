@@ -1,0 +1,7 @@
+package com.shrey.samples.java8;
+
+public class DefaultInterfaceImp implements DefaultInterface{
+public static void main(String[] args) {
+	new DefaultInterfaceImp().printHello();
+}
+}

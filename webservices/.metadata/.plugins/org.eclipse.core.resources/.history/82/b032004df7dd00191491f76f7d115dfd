@@ -1,0 +1,26 @@
+package com.hcl.employee.dao;
+
+import java.util.List;
+
+import javax.ws.rs.core.Response;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+
+
+
+public class EmployeeDaoImpl implements EmployeeDao {
+	
+	private SessionFactory sessionfactory;
+
+	
+	@Override
+	public List getAllEmployees() {
+
+		return sessionfactory.getCurrentSession().createQuery("from Employee")
+				.list();
+	}
+
+}

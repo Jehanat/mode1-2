@@ -1,0 +1,21 @@
+package com.hcl.collections;
+
+interface IHello{
+	void sayHello();
+}
+public class Lamda2 {
+public static void main(String[] args) {
+	IHello h1 = () ->{
+		System.out.println("Hello from Shrey");
+	};
+	IHello h2 = () ->{
+		System.out.println("Hello from Sharry");
+	};
+	IHello h3 = () ->{
+		System.out.println("Hello from Jenny");
+	};
+	h1.sayHello();
+	h2.sayHello();
+	h3.sayHello();
+}
+}

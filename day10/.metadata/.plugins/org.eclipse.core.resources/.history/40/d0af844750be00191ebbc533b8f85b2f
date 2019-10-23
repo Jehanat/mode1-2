@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+i=0
+questions=[
+           "1.What is Object Oriented programming ",
+           "2.Who introduced Java "
+           "3.How to declare generics "
+           "4.String.format()used for "
+           ];
+           function show(){
+        	   document.getElementById("question").innerHTML=question
+           }
+           ]

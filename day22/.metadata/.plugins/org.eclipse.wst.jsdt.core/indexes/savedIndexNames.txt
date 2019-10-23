@@ -1,0 +1,5 @@
+INDEX VERSION 1.3+C:\hcljava\day22\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4102407959.index
+3611028443.index
+4246688944.index
+545803640.index

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form  method="post" action="MyDetail.jsp">
+
+<h1>My Detail Section</h1>
+
+Employee ID : <input type="text" name="EMP_ID" size="25"><br/><br/>
+Full Name   : <input type="text" name="EMP_NAME" size="25"><br/><br/>
+Email Address: <input type="text" name="EMP_EMAIL" size="25"><br/><br/>
+Mobile Number: <input type="text" name="EMP_MOB_NO" size="25"><br/><br/>
+Date Joined:<input type="text" name="EMP_DATE_JOINED" size="25"><br/><br/>
+Department:<input type="text" name="EMP_DPT_NAME" size="25"><br/><br/>
+<input type="submit" value="Login">
+<input type="submit" value="cancel">
+</body>
+</html>

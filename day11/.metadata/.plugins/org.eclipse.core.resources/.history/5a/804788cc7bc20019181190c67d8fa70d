@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href='Issue'>Issue</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href='SearchBook'>Search Book</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href='ReturnBook '>Return Book</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href='History'>History</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+</body>
+</html>

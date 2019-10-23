@@ -1,0 +1,21 @@
+package com.jehanat;
+
+public class Jehanat {
+	
+		public String getName()
+		{
+			return "Jehanat";
+		}
+		 
+		public int getSapCode()
+		{
+			return 5183116;
+		}
+		public String getEmailId()
+		{
+			return "jehanatjamil@hcl.com";
+		}
+		 
+	}
+
+
